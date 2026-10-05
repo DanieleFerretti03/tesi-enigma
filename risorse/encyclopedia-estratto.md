@@ -1,80 +1,115 @@
 ## Enigma
 
+### Aticle's Author
+
 Arkadiusz Orłowski
 Institute of Physics, Polish Academy of Sciences,
 Warsaw, Poland
 Department of Informatics, WULS - SGGW, Warsaw,
 Poland
 
-### RelatedConcepts
-
-◃Crypto Machines
-
 ### Definition
 
-Enigma [Gr. αίνιγμα] is a common name for a family ofrotor-based
+Enigma [Gr. αίνιγμα] is a common name for a family of rotor-based
 electromechanical crypto machines, playing enormous role in providing
 security of radio communication for various German military units during the Second World War.
 
-
 ### Background
+#### From creation to patent
 
 The first Enigma, designed by Arthur Scherbius (patent DE416219 filed 23. 02. 1918),
 after rejection from German Navy and Foreign Office, was targeted at international business community.
+
 After 1923, four versions of commercial Enigma successively appeared.
-Models A and B, equipped with a typewriter, were quite huge
-$ ( 6 5 \times4 5 \times 3 5 c m ) $
+Models A and B, equipped with a typewriter, were quite huge (65x45x35 cm)
 and heavy (about 50 kg).
+
 Models C (short-lived) and D were smaller, with a lampboard (Ger. *Lampenbrett*)
 instead of a typewriter, and a reflector (Ger. *Umkehrwalze*)
 invented by Willi Korn (patent DE460457 filed 11. 03. 1926).
+
 Such a reflector ensured self-reciprocity of Enigma 
 (the same machine could be used for encryption and decryption of a message)
 and has become a hallmark of all subsequent versions.
-Similar designs were patented independently about the same time by Hugo Alexander Koch (patent NL10700 filed 07. 10. 1919),
+
+Similar designs were patented independently about the same time by
+Hugo Alexander Koch (patent NL10700 filed 07. 10. 1919),
 Arvid Gerhard Damm (patent SW52279 filed 10. 10. 1919), 
 and Edward Hugh Hebern (patent US1510441 filed 31. 03. 1921).
 
 In 1922, patent rights for Koch's *geheimschrijfmachine* were transferred to 
-Naamloze Vennootschap Ingenieursbureau Securitas, and in 1927, resold (for 600 Dutch guilders)
-to *Chiffriermaschinen Aktien Gesellschaft,* a company co-founded by Scherbius in 1923.
+Naamloze Vennootschap Ingenieursbureau Securitas,
+and in 1927, resold (for 600 Dutch guilders) to *Chiffriermaschinen Aktien Gesellschaft,*
+a company co-founded by Scherbius in 1923.
 
+#### Use of Enigma by army
 
 German Navy started to experiment with Enigma in 1926 (*Funkschlussel* C).
 German Army introduced its version of Enigma (based on Enigma D) in 1928.
 A mature version named Enigma I was ready by 1932.
-Novel very important part of military Enigma was a plugboard (Ger.
-*Steckerbrett*) that significantly increased the number of its possible settings.
-German Navy adapted Enigma I in 1934 (*Funkschlussel* M or M1, evolving up to M4, introduced in February 1942 for *U-boot* communication).
-From mid-1930s, Enigma became universally used in all German armed forces (Air Forces introduced Enigma I in 1935; Military Intelligence started to regularly use a different G model of Enigma around 1936) and most military-related services.
+
+Novel very important part of military Enigma was a plugboard
+(Ger. *Steckerbrett*) that significantly increased the number of its possible settings.
+
+German Navy adapted Enigma I in 1934
+(*Funkschlussel* M or M1, evolving up to M4,
+introduced in February 1942 for *U-boot* communication).
+
+From mid-1930s, Enigma became universally used in all German armed forces
+(Air Forces introduced Enigma I in 1935;
+Military Intelligence started to regularly use a different G model of Enigma around 1936)
+and most military-related services.
+
 Estimated total number of various Enigma machines used in the period 1935-1945 is of the order of 100,000.
 
-
-mid-s,Enigmabecameuniversally usedinall German
+#### External aspect
 
 A typical military Enigma was a portable electromechanical machine equipped with a battery.
-It had dimensions and looks of a typical typewriter (size of $ 2 8 \times3 4 \times1 5 \mathrm{cm} $ , weight about 12 kg).
+It had dimensions and looks of a typical typewriter (size of 28x34x15 cm, weight about 12 kg).
 A keyboard included only 26 characters of the Latin alphabet.
-Conventions for digits, punctuation signs, and other special characters had to be (and were) elaborated (e.
-g.
-, numbers were often spelled out).
-A partly transparent panel marked with the same set of 26 Latin letters was covering 26 bulbs of the type used in flashlights.
-Elements responsible for encryption consisted of variable-position rotors (Ger.
-*Walzen),* one reflector, one fixed entry plate (Ger.
-*Eintrittwalze),* and the plugboard.
+
+Conventions for digits, punctuation signs, and other special characters were elaborated
+(e.g. numbers were often spelled out).
+
+A partly transparent panel marked with the same set of 26 Latin letters
+was covering 26 bulbs of the type used in flashlights.
+
+#### Description of cipher system
+
+Elements responsible for encryption consisted of:
+variable-position rotors (Ger. *Walzen),
+one reflector,
+one fixed entry plate (Ger. *Eintrittwalze),* 
+and the plugboard.
+
 Inside military Enigma, three rotors, selected from a larger set, could be accommodated.
-Till December 15, 1938, the Army used only first three of five differently wired rotors supplied (numbered I, II, III, IV, and V, respectively).
-The Navy used all rotors from the very beginning and successively increased the number of available types of rotors: first to seven and eventually to eight.
-Each rotor had 26 fixed contacts on one side, and 26 spring-loaded contacts on the other side, both sides being internally connected in an irregular fashion.
-Each rotor was equipped with a ring with 26 letters of the alphabet (or numbers from 01 to 26) engraved on its circumference.
+
+Till December 15, 1938, the Army used only first three of five differently
+wired rotors supplied (numbered I, II, III, IV, and V, respectively).
+
+The Navy used all rotors from the very beginning and successively increased
+the number of available types of rotors: first to seven and eventually to eight.
+
+Each rotor had 26 fixed contacts on one side, and 26 spring-loaded contacts
+on the other side, both sides being internally connected in an irregular fashion.
+
+Each rotor was equipped with a ring with 26 letters of the alphabet (or numbers from 01 to 26)
+engraved on its circumference.
+
 The ring could be fixed at 26 different positions with respect to the core of the rotor.
 The top letters of the rings were visible through small windows located in a metal lid of Enigma.
-The reflector, placed to the left of the variable-position rotors, did not move, and had 26 spring-loaded contacts located on its right side.
+
+The reflector, placed to the left of the variable-position rotors,
+did not move, and had 26 spring-loaded contacts located on its right side.
+
 These contacts were connected among themselves in pairs.
 The original reflector UKW A was replaced by UKW B in November 1937.
 UKW C appeared in 1940 and was used only occasionally.
 UKW D, first detected by Allies in January 1944, had adjustable internal connections.
+
 M4 model had an additional fourth rotor denoted $ \beta $ and called a Greek rotor.
+
+--- 
 To fill in the same space, the type-B reflector was made proportionally thinner.
 In 1943, another Greek rotor denoted $ \gamma $ , associated with a modified type-C reflector was introduced.
 Rotors $ \beta $ and $ \gamma $ did not move during encryption but could be set at any of 26 positions.
