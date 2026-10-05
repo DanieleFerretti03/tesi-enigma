@@ -8,10 +8,12 @@ Vedi [[indice-risorse.md]] per maggiori dettagli.
 Domande sparse:
 
 > Esiste un modello di tesi per latex?
+
 Si esitono, ma per ora e' importante fare una scrematura delle fonti
 prima di scrivere delle cose formali.
 
 > Quanti CFU sono la prova finale?
+
 Differentemente da quanto supposto di persona (6CFU) la risposta e':
 la prova finale sono 3CFU.
 
