@@ -1,0 +1,48 @@
+\begin{center}
+\resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[
+  componente/.style={
+    draw,
+    rounded corners,
+    minimum height=8mm,
+    align=center,
+    font=\small
+  },
+  andata/.style={
+    draw=blue!75!black,
+    thick,
+    -{Stealth[length=2.5mm]}
+  },
+  ritorno/.style={
+    draw=red!75!black,
+    thick,
+    -{Stealth[length=2.5mm]}
+  }
+]
+  % Componenti principali
+  \node[componente] (sc) {Scambiatore};
+  \node[componente, right=1.2cm of sc] (r1) {Rotore I};
+  \node[componente, right=1.2cm of r1] (r2) {Rotore II};
+  \node[componente, right=1.2cm of r2] (r3) {Rotore III};
+  \node[componente, right=1.2cm of r3] (rif) {Riflessore};
+
+  % Nodo sorgente e nodo pozzo
+  \node[componente, left=2.5cm of sc, yshift=8mm] (tastiera) {Tastiera};
+  \node[componente, left=2.5cm of sc, yshift=-8mm] (lampadina) {Lampadina};
+
+  % Andata: frecce sopra i nodi
+  \draw[andata] (tastiera.south east) -- (sc.north west);
+  \draw[andata] ([yshift=2.5mm]sc.east)  -- ([yshift=2.5mm]r1.west);
+  \draw[andata] ([yshift=2.5mm]r1.east)  -- ([yshift=2.5mm]r2.west);
+  \draw[andata] ([yshift=2.5mm]r2.east)  -- ([yshift=2.5mm]r3.west);
+  \draw[andata] ([yshift=2.5mm]r3.east)  -- ([yshift=2.5mm]rif.west);
+
+  % Ritorno: frecce sotto i nodi
+  \draw[ritorno] ([yshift=-2.5mm]rif.west) -- ([yshift=-2.5mm]r3.east);
+  \draw[ritorno] ([yshift=-2.5mm]r3.west)  -- ([yshift=-2.5mm]r2.east);
+  \draw[ritorno] ([yshift=-2.5mm]r2.west)  -- ([yshift=-2.5mm]r1.east);
+  \draw[ritorno] ([yshift=-2.5mm]r1.west)  -- ([yshift=-2.5mm]sc.east);
+  \draw[ritorno] (sc.south west) -- (lampadina.north east);
+  \end{tikzpicture}%
+}
+\end{center}

@@ -1,5 +1,74 @@
 \section{Descrizione informale}
 
-La macchina enigma 
+Nel brevetto originale la ME e' composta da:
 
-\input{capitoli/lorem-ipsum.tex}
+\begin{enumerate}
+\item Tastiera
+\item Lampadine
+\item Rotori
+\item Riflessore
+\end{enumerate}
+
+Solo dopo l'acquisizione da parte dell'esercito tesesco e' stato
+aggiunto il pannello degli scambiatori (\textbf{Steckerbrett}).
+
+\subsection{Da lettera chiara a lettera cifrata}
+A differenza di altri sistemi cifranti, una volta impostata la chiave, 
+la ME cifra una lettera alla volta.
+
+\paragraph{Il punto di vista dell'operatore}
+Supponiamo di avere un messaggio da dover cifrare: 
+"\textit{klarem Wetter}".
+
+La prima cosa da fare e' quella di impostare la macchina con la "chiave".
+La prima lettera del nostro messaggio e' una "K", quindi
+sulla \textbf{Tastiera} il tasto "K" andra' premuto.
+Alla pressione del bottone una \textbf{Lampadina} si accendera'.
+In base alla lampadina accesa si sapra' la lettera cifrata.
+
+\paragraph{I passaggi dentro la macchina}
+Il segnale elettrico interagira' con piu' componenti della macchina.
+L'ordine esatto e':
+
+\begin{enumerate}
+\item Scambiatore
+\item Rotore I
+\item Rotore II
+\item Rotore III
+\item Riflessore
+\item Rotore III
+\item Rotore II
+\item Rotore I
+\item Scambiatore
+\end{enumerate}
+
+Per ora non ci interessa capire le singole componenti, ci basta
+sapere che il prodotto della cifratura di una componente e' dato
+alla componente successiva.
+Nell'ultimo passaggio, lo scambiatore fa accendere la \textbf{Lampadina},
+mostrando all'operatore la lettera cifrante finale.
+
+\input{capitoli/descrizione-grafo.tex}
+
+In Blu il percorso fatto all'andata e in rosso quello del ritorno.
+
+\subsection{Analisi e decifrazione}
+Sfruttando un sistema \textit{polialfabetico}, la macchina e' difficilmente
+attaccabile tramite analisi statisstica delle parole.
+
+Supponendo che l'attaccante abbia a disposizione la macchina enigma,
+e il messaggio cifrato, in quel caso basterebbe cercare la chiave.
+
+\paragraph{Breve conto delle impostazioni}
+\begin{itemize}
+\item Avendo 5 rotori, e dovendone scegliere 3: $5 \times 4 \times 3 = 60$
+\item Dovendo scegiere la posizione iniziale dei rotori: $26^{3} = 17576$
+\end{itemize}
+Con solo questi dati arriveremo alle possibili chiavi: $60 \times 17576 = 1054530$
+Che possono sembrare un numero cosiderevole, tuttavia si possono esaminare 
+"velocemente".
+Ipotiziamo un operatore in grado di vedere una combinazione al secondo:
+$$\frac{1054530 c}{86400 \frac{c}{g}} = 12.205 g$$
+Dove 'c' sta per combinazioni e 'g' sta per giorni.
+
+%\input{capitoli/lorem-ipsum.tex}
