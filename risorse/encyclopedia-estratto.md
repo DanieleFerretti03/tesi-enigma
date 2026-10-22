@@ -152,12 +152,12 @@ For M4 Enigma there was also an additional prescription for which of four combin
 Such a combination usually lasted for the whole month.
 
 (2) Position of a ring with respect to its rotor core (Ger. *Ringstellung).
-* Rings settings on all three rotors placed into Enigma from left to right were provided $ (2 6^{3} $ possibilities).
+* Rings settings on all three rotors placed into Enigma from left to right were provided $ (26^{3} $ possibilities).
 Greek rotors settings in M4 machine were kept practically fixed.
 
 (3) Plugboard connections (Ger. *Steckerverbindungen).
 * The cross plugging involved firstly six, then eight, and eventually ten pairs of letters.
-Thus, the plugboard offered far more possible variations than any other part of the daily key (of the order of $ 1 0^{1 5} $ ).
+Thus, the plugboard offered far more possible variations than any other part of the daily key (of the order of $ 10^{15} $ ).
 
 (4) Initial positions of rotors at the top of Enigma (Ger. *Grundstellung).
 * This was a group of three (or four for M4) letters describing rotors starting positions.
