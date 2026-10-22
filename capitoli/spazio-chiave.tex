@@ -1,0 +1,58 @@
+Lo spazio per la chiave e' strettamente legato al modello di ME
+che si sta analizzando.
+Le differenze, in base alla modifica, possono essere anche ordini di
+grandezza piu' grandi.
+
+Alcune assunzioni fatte sono poi veritiere solo dal 1926-1931 quando ancora
+non si conoscieva "quasi nulla" della macchina cifrante.
+
+
+\subsubsection{Cavi scambianti}
+Le combinazioni sono analoghe a "quante C coppie distinte posso formare da un alfabeto di 26 lettere?".
+Siccome ci sono 26 lettere totali, il numeri di cavi scambiati sara' compreso:
+$0 \le cavi \le 13$ dove 13 e' semplicemente 26 lettere diviso due.
+
+Calcoliamo il numero di possibili combinazioni dal seguente binomio di newton:
+
+$$\binom{26}{2c} = \frac{26!}{(26-2c)! \times c! \times 2^{c}}$$
+Dove con "c" intendiamo il numero di cavi.
+
+Si nota con un conto esausitovo che:
+$$max(\binom{26}{2c}} \longrightarrow  c = 11$$
+
+Infatti:
+$$\binom{26}{22} = 205552193096250$$
+
+\subsubsection{Cavi dentro i rotori}
+Le combinazioni in questo caso sono analoghe a "quanti modi ho di diporre 26 lettere?".
+In questo caso il numero sarebbe: $26!$.
+
+Questo numero di fatto sara' solo teorico.
+I dipartimenti avevano in dotazione dei dischi standard.
+L'esercito non fini mai ad usare tutti, o parte, dei $26!$ dischi possibili.
+
+\subsubsection{Posizione iniziale anelli}
+Siccome parliamo di elementi distinti possiamo calcolarne uno e da li' capire per il numero di rotori.
+Un anello poteva prendere 26 posizioni possibili.
+Quindi, con 3 rotori potevano contribuire con $26^{3} = 17576$ posizioni totali.
+Piu' avanti con 4 rotori si raggiunse: $26^{4}= 456976$ combinazioni totali.
+
+Alcune macchine potevano avere anche due tipi di anelli, ma ai fini del conto delle possiblita'
+questo concetto non ha effetti pratici.
+
+\subsubsection{Possibili riflessori}
+Analogamente ai cavi scambianti:
+"Quante possibili 13 coppie distinte posso generare da 26 lettere?".
+
+$$ \frac{26!}{13!\times2^13}= 7905853580625$$
+
+Come specificato in "cavi dentro i rotori", di fatto ogni reparto aveva il suo riflessore.
+
+\subsubsection{Scelta rotori}
+Durante la guerra la ME passo' dall'avere i soli 3 rotori di base fino ad un
+massimo di 8 rotori.
+Solo tre rotori tuttavia potevano essere alloggiati dentro la ME.
+Parte della chiave quindi divenne anche scegliere quale rotore finiva dentro la ME.
+
+$$ \binom{n}{3}$$
+dove: $ 3 \le n \le 8$ in base al tipo di modello.
