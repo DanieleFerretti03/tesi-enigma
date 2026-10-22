@@ -1,2 +1,108 @@
 \section{Evoluzione della macchina}
-\input{capitoli/lorem-ipsum.tex}
+
+\paragraph{1918 Scherbius crea il brevetto}
+
+\paragraph{1921 Francia e Polonia stringono un accordo militare}
+
+
+\paragraph{1925 L'esercito Tedesco inizia l'uso della ME}
+Rudolf Schmidt autorizza l'uso della ME.
+L'esercito come prima cosa modifica cambia gli scambi interni
+effettuati dai rototori.
+Scherbius era riuscito a vendere qualche macchina a dei privati,
+l'esercito volle eliminare il problema di decifrazione da parte di
+privati cittadini.
+
+L'esercito inizio con stabilire che le chaivi dei cifrarei dovevano essere giornagliere.
+Queste chiavi poi servivano a mettersi "d'accordo" per una seconda chiave ad inizio del messaggio.
+
+\paragraph{1926 Le prime intercettazioni}
+Gli stati confinanti iniziano a intercettare dei messaggi
+che non riescono a decifare con i metodi tradizionali.
+
+\paragraph{1929 Scherbius muore}
+Da qui, il possesso pieno della macchina enigma e delle sue modifiche
+sara' solo in mano all'esercito tedesco.
+
+\paragraph{1931 Il tradimento di Hans-Thilo Schmidt}
+Hans, fratello di Rudolf, vendette dei manuali in dotazione all'esercito
+tedesco ad una spia Francese.
+Questa operazione di fatto non avra' un iniziale impatto nelle comunicazioni tedesche.
+La forza dietro questo sistema cifrante non era la segretezza, quanto la
+segretezza imposta sulle chiavi.
+
+Tuttavia, questo permise ad altri governi di avere delle repliche abbastanza
+fedeli della ME.
+
+Grazie poi all'accordo stipulato nel 1921, la polonia inizio le operazioni di
+decifrazione dei messaggi.
+
+\paragraph{1932 Rejewski trova una falla}
+La chiave citata prima ad inizio del messaggio era ripetuta per "sicurezza".
+Nella trasmissione in codice morse il ripetere le tre lettere due volte era
+un modo di assicurarsi che il segnale fosse stato recepito correttamente.
+
+Questa correlazione quasi insegnificante in realta' porta con se una forte
+implicazione.
+La prima e la quarta lettera del messaggio cifrato sono la stessa lettera.
+Cosi' come la seconda e la quinta; e la terza con la sesta.
+
+Ricevendo piu' messaggi da uno stesso operatore, sarebbe stato quindi possibile
+ricavare abbastanza correleazioni da capire la chaive usata in quel messaggio.
+
+La seconda considerazione che Rejewski riusci' a formulare fu (detta brevemente):
+Lo scambiatore iniziale non era troppo determinante ai fini della chiave.
+(La lunghezza dei grafi degli scambi rimane invariata)
+
+Quindi, gli elementi "interessanti" da dover analizzare erano solo le posizioni
+iniziali dei rotori.
+Passando quindi da un $5\times10^{12}$ a $105456$.
+
+$105456 = 26^{3} * 3!$
+Dove $26^3$ indica le posizioni iniziali degli anelli e $3!$ le possibili di disposizioni
+di tre rotori.
+
+Per trovare le lettere scambiare il processo risulta "banale".
+Una volta a disposizione di un testo che per quasi tutta la sua parte risulta in chiaro,
+si procede intuitivamente a cercare di ricostruire delle parole di senso.
+
+\paragraph{1938 Aumentano rotori e cavi}
+La ME passo' dal poter scegliere la disposizione di 3 rotori tra 3 disposibili a
+scegliere tra 3 rotori avendone 5 a disposizione.
+
+Le configurazioni, senza cosiderare lo scambiatore, passano da:
+$105456$ come calcolata prima a $1054560$.
+
+Il secondo "grande" cambiamento fu' quello di passare da 6 cavi scambianti a 10.
+Ora, le possibili lettere scabiate passavano da 12 a 20 (su 26 lettere totali).
+
+\paragraph{1939 il passaggio di testimone}
+Gli inglesi dopo aver padroneggiato il sistema polacco iniziarono le operazioni di decifrazione.
+Avendo a diposizione piu' personale, riuscirono ad ovviare ad alcuni problemi riscontrati prima.
+
+Un nuovo "aiuto" per i decifratori fu' notare che le tre lettere iniziali del messaggio
+non erano di fatto sempre casuali.
+Anzi, spesso erano assimilabili a dei pattern deterministici.
+Es. Lettere cosecutive della tastiera o iniziali di nomi di persona.
+
+Un secondo aiuto, sulla falsa riga di quello precedente, fu notare che i rotori non venivano
+dispositi nella stessa posizione per due giorni di fila.
+
+Un terzo fu notare le considerazioni precedenti anche per i cavi scambianti.
+
+Una cosiderazione del tutto diversa venne fatta per trovare i "crib".
+Ovvero, delle parti di testo attese dentro il testo cifrato.
+Essendo comunicazioni militare, alcuni modi di scrivere le frasi erano sempre gli stessi.
+Queste ripetizioni permisero quindi di detemrinare alcuni schemi da poter cercare dentro
+i testi cifrati.
+Per fare un paragone, prima c'erano 3 corrispondenze dalla chiave giornagliera, ora potenzialemente
+intere parole o frasi.
+
+\paragraph{1940 Una macchina per automatizzare il processo}
+Turing riusci' a creare una macchina capace di automatizzare il processo di ricerca.
+(Circa 1 ore)
+
+Queste macchine richedevano l'inserimento di crib manualemnte.
+Per aumentare il sucesso di un crib funzionante si ricorse a una proprieta'
+della ME.
+Ovvero una lettera in chiaro non poteva essere cifrata con la stessa lettera.

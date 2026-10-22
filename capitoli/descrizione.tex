@@ -68,7 +68,28 @@ Con solo questi dati arriveremo alle possibili chiavi: $60 \times 17576 = 105453
 Che possono sembrare un numero cosiderevole, tuttavia si possono esaminare 
 "velocemente".
 Ipotiziamo un operatore in grado di vedere una combinazione al secondo:
-$$\frac{1054530 c}{86400 \frac{c}{g}} = 12.205 g$$
+$$\frac{1054560 c}{86400 \frac{c}{g}} = 12.205 g$$
 Dove 'c' sta per combinazioni e 'g' sta per giorni.
+
+La vera differenza la fa lo scambiatore nell'aumentare il numero di combinazioni:
+\begin{itemize}
+\item Scambiatore:$\frac{26!}{(26-20)!\times10!\times2^{10}} = 150738274937250$
+\end{itemize}
+Sotto la supposizione di avere 10 cavi.
+
+\paragraph{Quando ci avrebbe messo una persona a trovare la giusta chiave?}
+Senza \textbf{scambiatore}, il conto era di 12.205 giorni.
+
+$$ \#chiavi = 158962555217826360000 $$
+Ovvero, i numeri citati prima moltiplicati tra di loro.
+
+Supponendo una combinazione al secondo per un anno di lavoro riusciremo a
+controllare: $ \#secondi_anno = 365g \times 24h \times 60m \times 60s = 31536000$. 
+
+$$ \#chiavi / \#secondi_anno = 5040669559164.96575$$
+
+O detto in maniera compatta circa $5\times10^{12}$ anni.
+Tanto per dare un metro di paragona, l'eta' da una delle stime dell'universo e' $13\times10^{9}$.
+
 
 %\input{capitoli/lorem-ipsum.tex}
