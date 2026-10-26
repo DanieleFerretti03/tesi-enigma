@@ -29,13 +29,13 @@ In cryptography [5] this word is used for the algorithm that does encryption or 
 
 
 Enigma Cipher Machine [1–4] is the name of an electro-mechanical rotor cipher machine which was first developed in Germany
-to provide security to commercial communi- cation among companies and banks just after the 1st world war, around 1917.
+to provide security to commercial communication among companies and banks just after the 1st world war, around 1917.
 The Dutch invented these rotor based cipher machines earlier in 1915,
 however officially the Enigma Cipher Machine was first developed by Arthur Scherbius in 1918 and Enigma was just a brand name.
 Later several versions of Enigma were developed and named Enigma A, B, C, etc.
 
-In 1926 the German Army started taking interest in Enigma machines due to its spe- cific and high security strength.
-In 1927 they build their first prototype, and used it ex- clusively to test its capacity.
+In 1926 the German Army started taking interest in Enigma machines due to its specific and high security strength.
+In 1927 they build their first prototype, and used it exclusively to test its capacity.
 The final version for use in the German army was Enigma-I and was ready for deployment by 1932.
 Initially the Enigma cipher machines were free for use by any organisation.
 But after 1932, the German army changed the rule and there after use of any Enigma machine had to be approved by the German Army.
@@ -44,7 +44,7 @@ By this time many other countries were also involved in making such cipher machi
 In 1930, the Polish Cipher Bureau started taking interest in decoding the messages sent using Enigma.
 They started doing research on the commercial Enigma machines initially.
 The German army cipher machine appeared as big challenge at that time.
-The Polish bu- reau believed that mathematicians and scientists would have high chance of breaking the Enigma cipher.
+The Polish bureau believed that mathematicians and scientists would have high chance of breaking the Enigma cipher.
 So the Cipher Bureau of Poland appointed 20 mathematicians from Poznan University to work on the Enigma machines.
 Marian Rejewski, Jerzy Rozycki and Henryk Zygalski were three students who achieved a breakthrough in decrypting the
 Enigma Cipher.
@@ -160,22 +160,20 @@ Note that:
 $$ 26! = 403;291;461;126;605;635;584;000;000 (4. 5)$$
 
 Since the rotor’s discs are hardwired.
-So, such a vast number would have been impossi- ble in practice to construct.
+So, such a vast number would have been impossible in practice to construct.
 (Also, The Germans never changed the disc wirings during the war.
 They did, however create several different groups of rotor’s disc wirings for special purpose machine.
 ) So to place the leftmost position of rotor, the cryptographers could have select any one of disc from those 26!.
 Further, for the middle position, it could have been selected from any one of the (26! - 1) discs and for the rightmost, it could have been selected from any 7
-
 one of (26! - 2) discs.
-So, the total number of ways of all possible combination of ordering in the Enigma ma- chine is
+So, the total number of ways of all possible combination of ordering in the Enigma machine is
 
 $$ 26! (26! 1) (26! 2) (4. 6)$$
 
 ##### Remark :
 
 It was known that the German troops carried individually numbered and unique sets of 3 rotors.
-Hence, selection of a rotor reduced the no.
-of possibilities by one.
+Hence, selection of a rotor reduced the no. of possibilities by one.
 So $26!^{3}$ is not the correct value.
 
 
@@ -351,9 +349,7 @@ Enigma(ch-2,3,4), the invention of the engima machine, 2014.
 
 [3]MACHINES, C.
 , AND CRYPTOLOGY.
-Technical details of the enigma machine,
-
-2015.
+Technical details of the enigma machine, 2015.
 
 [4]MILLER, A.
 R.
