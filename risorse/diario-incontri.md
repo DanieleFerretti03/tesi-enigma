@@ -24,3 +24,5 @@ Fonte: https://servizionline.unige.it/unige/stampa_manifesto/PD/2022/8759.html
 - [x] Scrivere alla professoressa Ribaudo relativamente alle regole per la tesi
 - [x] Creare un progetto git 
 - [x] Cercare se esiste gia' un modello matematico che rappresenta la macchina enigma
+
+## 2026-11-05 
